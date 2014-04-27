@@ -5,7 +5,7 @@ var express = require('express'),
 //Aplicación
 var app = express();  
   
-//Configuración de la aplicación
+//modulo de express que sirve para configureonfiguración de la aplicación
 app.configure(function(){
 //parsear el cuerpo del request para uso del POST.
   app.use(express.bodyParser());  
