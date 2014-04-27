@@ -1,0 +1,22 @@
+{
+  "name": "miscarnesAPI",
+  "version": "0.0.1",
+  "description": "miscarnes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmir17"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "express": "*",  
+    "mongoose":"*", 
+    "mocha": "~1.13.0"
+  }
+}
