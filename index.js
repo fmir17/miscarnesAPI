@@ -14,9 +14,9 @@ app.configure(function(){
   app.use(app.router);  
 });  
   
-app.configure('development', function(){  
-  app.use(express.errorHandler());  
-});  
+//app.configure('development', function(){  
+  //app.use(express.errorHandler());  
+//});  
 
 //add
 app.all('*', function(req, res, next) {
