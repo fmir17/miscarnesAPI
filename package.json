@@ -10,13 +10,12 @@
     "type": "git",
     "url": "https://github.com/fmir17"
   },
-    "dependencies": {
+  "dependencies": {
     "express": "*",  
-    "mongoose":"*", 
-    "mocha": "~1.13.0"
+    "mongoose":"*"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "node": "0.10.26",
+    "npm": "1.4.3 "
   }
 }
