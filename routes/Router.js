@@ -3,6 +3,7 @@ module.exports = function(app){
 
 
     var Tipocarne = require('../models/tipocarne');
+    var Carne = require('../models/carne');
 
     //*Metodos para Muro*
     //Crear Nuevo comentario en Muro
@@ -21,8 +22,21 @@ module.exports = function(app){
         });
 
     };
+
+    carne = function(){
+        var carne = new Carne({id:req.body.id, tipocarne:req.body.tipocarne,cantidad:req.body.cantidad,fecha:req.body.fecha})
+        carne.save();
+        res.end();
+    };
+
+
+
 //Redireccion para wall
     app.post('/tipocarne', tipocarne);
     app.get('/tipocarne', listTipocarne);
+
+    app.post('/carne', carne);
+    //app.get('/carne', listTipocarne);
+
 
 }
